@@ -1,11 +1,11 @@
 package org.liuyiming.bigdata.antun.web.response;
 
 public class BaseResponse {
-
+	
 	private Integer code;
-
+	
 	private String message;
-
+	
 	private Object data;
 
 	public Integer getCode() {

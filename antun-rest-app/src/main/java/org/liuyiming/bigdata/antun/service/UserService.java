@@ -20,4 +20,8 @@ public interface UserService {
 
 	User findByPhone(String phone);
 
+	int updateUser(User user);
+
+	List<User> findByStatus(int i);
+
 }

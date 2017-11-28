@@ -4,7 +4,6 @@ import java.io.Serializable;
 import java.util.Date;
 
 public class User implements Serializable {
-
 	private Long id;
 
 	private Date gmtCreate;
@@ -21,19 +20,23 @@ public class User implements Serializable {
 
 	private String idNo;
 
-	private Integer province;
+	private Long province;
 
-	private Integer city;
+	private Long city;
 
-	private Integer town;
+	private Long town;
 
 	private String channelCode;
-
-	private String channelToken;
 
 	private String productCode;
 
 	private Integer stutus;
+
+	private Integer sendCode;
+
+	private String sendResult;
+	
+	private String channelToken;
 
 	private static final long serialVersionUID = 1L;
 
@@ -101,27 +104,27 @@ public class User implements Serializable {
 		this.idNo = idNo;
 	}
 
-	public Integer getProvince() {
+	public Long getProvince() {
 		return province;
 	}
 
-	public void setProvince(Integer province) {
+	public void setProvince(Long province) {
 		this.province = province;
 	}
 
-	public Integer getCity() {
+	public Long getCity() {
 		return city;
 	}
 
-	public void setCity(Integer city) {
+	public void setCity(Long city) {
 		this.city = city;
 	}
 
-	public Integer getTown() {
+	public Long getTown() {
 		return town;
 	}
 
-	public void setTown(Integer town) {
+	public void setTown(Long town) {
 		this.town = town;
 	}
 
@@ -131,14 +134,6 @@ public class User implements Serializable {
 
 	public void setChannelCode(String channelCode) {
 		this.channelCode = channelCode;
-	}
-
-	public String getChannelToken() {
-		return channelToken;
-	}
-
-	public void setChannelToken(String channelToken) {
-		this.channelToken = channelToken;
 	}
 
 	public String getProductCode() {
@@ -155,5 +150,29 @@ public class User implements Serializable {
 
 	public void setStutus(Integer stutus) {
 		this.stutus = stutus;
+	}
+
+	public Integer getSendCode() {
+		return sendCode;
+	}
+
+	public void setSendCode(Integer sendCode) {
+		this.sendCode = sendCode;
+	}
+
+	public String getSendResult() {
+		return sendResult;
+	}
+
+	public void setSendResult(String sendResult) {
+		this.sendResult = sendResult;
+	}
+
+	public String getChannelToken() {
+		return channelToken;
+	}
+
+	public void setChannelToken(String channelToken) {
+		this.channelToken = channelToken;
 	}
 }

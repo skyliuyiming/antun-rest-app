@@ -63,4 +63,17 @@ public class UserServiceImpl implements UserService {
 			return null;
 		return selectByExample.get(0);
 	}
+
+	@Override
+	public int updateUser(User user) {
+		return userMapper.updateByPrimaryKeySelective(user);
+	}
+
+	@Override
+	public List<User> findByStatus(int i) {
+		UserExample userExample = new UserExample();
+		Criteria createCriteria = userExample.createCriteria();
+		createCriteria.andStutusEqualTo(i);
+		return userMapper.selectByExample(userExample);
+	}
 }

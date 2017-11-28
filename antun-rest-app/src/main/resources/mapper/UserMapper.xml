@@ -80,7 +80,7 @@
     id, gmt_create, gmt_modified, name, sex, birth, phone, id_no, province, city, town, 
     channel_code, channel_token, product_code, stutus
   </sql>
-  <select id="selectByExample" parameterType="com.zdjy.bigdata.antun.domain.UserExample" resultMap="BaseResultMap">
+  <select id="selectByExample" parameterType="org.liuyiming.bigdata.antun.domain.UserExample" resultMap="BaseResultMap">
     select
     <if test="distinct">
       distinct
@@ -112,33 +112,30 @@
     delete from user
     where id = #{id,jdbcType=BIGINT}
   </delete>
-  <delete id="deleteByExample" parameterType="com.zdjy.bigdata.antun.domain.UserExample">
+  <delete id="deleteByExample" parameterType="org.liuyiming.bigdata.antun.domain.UserExample">
     delete from user
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.zdjy.bigdata.antun.domain.User">
-    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Long">
-      SELECT LAST_INSERT_ID()
-    </selectKey>
-    insert into user (gmt_create, gmt_modified, name, 
-      sex, birth, phone, 
+  <insert id="insert" parameterType="org.liuyiming.bigdata.antun.domain.User">
+    insert into user (id, gmt_create, gmt_modified, 
+      name, sex, birth, phone, 
       id_no, province, city, 
       town, channel_code, channel_token, 
       product_code, stutus)
-    values (#{gmtCreate,jdbcType=TIMESTAMP}, #{gmtModified,jdbcType=TIMESTAMP}, #{name,jdbcType=VARCHAR}, 
-      #{sex,jdbcType=INTEGER}, #{birth,jdbcType=VARCHAR}, #{phone,jdbcType=VARCHAR}, 
+    values (#{id,jdbcType=BIGINT}, #{gmtCreate,jdbcType=TIMESTAMP}, #{gmtModified,jdbcType=TIMESTAMP}, 
+      #{name,jdbcType=VARCHAR}, #{sex,jdbcType=INTEGER}, #{birth,jdbcType=VARCHAR}, #{phone,jdbcType=VARCHAR}, 
       #{idNo,jdbcType=VARCHAR}, #{province,jdbcType=INTEGER}, #{city,jdbcType=INTEGER}, 
       #{town,jdbcType=INTEGER}, #{channelCode,jdbcType=VARCHAR}, #{channelToken,jdbcType=VARCHAR}, 
       #{productCode,jdbcType=VARCHAR}, #{stutus,jdbcType=INTEGER})
   </insert>
-  <insert id="insertSelective" parameterType="com.zdjy.bigdata.antun.domain.User">
-    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Long">
-      SELECT LAST_INSERT_ID()
-    </selectKey>
+  <insert id="insertSelective" parameterType="org.liuyiming.bigdata.antun.domain.User">
     insert into user
     <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
       <if test="gmtCreate != null">
         gmt_create,
       </if>
@@ -183,6 +180,9 @@
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
       <if test="gmtCreate != null">
         #{gmtCreate,jdbcType=TIMESTAMP},
       </if>
@@ -227,7 +227,7 @@
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.zdjy.bigdata.antun.domain.UserExample" resultType="java.lang.Long">
+  <select id="countByExample" parameterType="org.liuyiming.bigdata.antun.domain.UserExample" resultType="java.lang.Long">
     select count(*) from user
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
@@ -307,7 +307,7 @@
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="com.zdjy.bigdata.antun.domain.User">
+  <update id="updateByPrimaryKeySelective" parameterType="org.liuyiming.bigdata.antun.domain.User">
     update user
     <set>
       <if test="gmtCreate != null">
@@ -355,7 +355,7 @@
     </set>
     where id = #{id,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.zdjy.bigdata.antun.domain.User">
+  <update id="updateByPrimaryKey" parameterType="org.liuyiming.bigdata.antun.domain.User">
     update user
     set gmt_create = #{gmtCreate,jdbcType=TIMESTAMP},
       gmt_modified = #{gmtModified,jdbcType=TIMESTAMP},

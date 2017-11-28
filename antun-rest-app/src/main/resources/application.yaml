@@ -14,5 +14,5 @@ spring:
     
 mybatis:
   mapper-locations: mapper/*.xml
-  type-aliases-package: com.zdjy.bigdata.antun.mapper
+  type-aliases-package: org.liuyiming.bigdata.antun.mapper
   type-handlers-package: org.apache.ibatis.type.LocalDateTypeHandler
