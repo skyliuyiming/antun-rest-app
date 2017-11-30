@@ -1,10 +1,11 @@
 package org.liuyiming.bigdata.antun.service;
 
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
+import org.apache.ibatis.javassist.expr.NewArray;
 import org.liuyiming.bigdata.antun.domain.User;
 import org.liuyiming.bigdata.antun.domain.UserExample;
 import org.liuyiming.bigdata.antun.domain.UserExample.Criteria;
@@ -30,7 +31,9 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public int addUser(UserAdd userAdd) {
+		
 		User transfer = TransferUtil.transfer(userAdd, User.class);
+		
 		return userMapper.insertSelective(transfer);
 	}
 

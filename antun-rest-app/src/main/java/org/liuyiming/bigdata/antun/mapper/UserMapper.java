@@ -1,12 +1,11 @@
 package org.liuyiming.bigdata.antun.mapper;
 
-import org.liuyiming.bigdata.antun.domain.User;
-import org.liuyiming.bigdata.antun.domain.UserExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
+import org.liuyiming.bigdata.antun.domain.User;
+import org.liuyiming.bigdata.antun.domain.UserExample;
 
 public interface UserMapper {
-
 	long countByExample(UserExample example);
 
 	int deleteByExample(UserExample example);

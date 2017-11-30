@@ -28,6 +28,8 @@ public class User implements Serializable {
 
 	private String channelCode;
 
+	private String channelToken;
+
 	private String productCode;
 
 	private Integer stutus;
@@ -35,8 +37,6 @@ public class User implements Serializable {
 	private Integer sendCode;
 
 	private String sendResult;
-	
-	private String channelToken;
 
 	private static final long serialVersionUID = 1L;
 
@@ -136,6 +136,14 @@ public class User implements Serializable {
 		this.channelCode = channelCode;
 	}
 
+	public String getChannelToken() {
+		return channelToken;
+	}
+
+	public void setChannelToken(String channelToken) {
+		this.channelToken = channelToken;
+	}
+
 	public String getProductCode() {
 		return productCode;
 	}
@@ -168,11 +176,6 @@ public class User implements Serializable {
 		this.sendResult = sendResult;
 	}
 
-	public String getChannelToken() {
-		return channelToken;
-	}
+	
 
-	public void setChannelToken(String channelToken) {
-		this.channelToken = channelToken;
-	}
 }

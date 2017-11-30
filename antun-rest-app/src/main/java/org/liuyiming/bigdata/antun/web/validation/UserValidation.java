@@ -26,12 +26,7 @@ public class UserValidation {
 	@Autowired
 	private ProductService productService;
 
-	/**
-	 * 新增验证
-	 * 
-	 * @param userAdd
-	 * @return
-	 */
+	
 	public String addUserValidation(UserAdd userAdd) {
 		// 字段验证
 		// 验证参数格式
@@ -106,12 +101,7 @@ public class UserValidation {
 		return string + "为空";
 	}
 
-	/**
-	 * 修改验证
-	 * 
-	 * @param userUpdate
-	 * @return
-	 */
+
 	public String updateUserValidation(UserUpdate userUpdate) {
 		// TODO Auto-generated method stub
 		return null;
@@ -119,48 +109,27 @@ public class UserValidation {
 
 	private static final String NAME_PATTERN = "[\\u4e00-\\u9fa5]{2,5}";
 
-	/**
-	 * 验证是否是姓名
-	 * 
-	 * @param name
-	 * @return
-	 */
 	public boolean isName(String name) {
 		return name.matches(NAME_PATTERN);
 	}
 
 	private static final String PHONE_PATTERN = "\\d{11}";
 
-	/**
-	 * 验证是否是手机号
-	 * 
-	 * @param phone
-	 * @return
-	 */
+
 	public boolean isPhone(String phone) {
 		return phone.matches(PHONE_PATTERN);
 	}
 
 	private static final String BIRTH_PATTERN = "\\d{4}-\\d{2}-\\d{2}";
 
-	/**
-	 * 验证是否是生日
-	 * 
-	 * @param idNo
-	 * @return
-	 */
+	
 	public boolean isBirth(String birth) {
 		return birth.matches(BIRTH_PATTERN);
 	}
 
 	private static final String IDNO_PATTERN = "\\d{17}[0-9xX]";
 
-	/**
-	 * 验证是否是身份证号
-	 * 
-	 * @param idNo
-	 * @return
-	 */
+	
 	public boolean isIdNo(String idNo) {
 		return idNo.matches(IDNO_PATTERN);
 	}

@@ -655,52 +655,52 @@ public class UserExample {
             return (Criteria) this;
         }
 
-        public Criteria andProvinceEqualTo(Long value) {
+        public Criteria andProvinceEqualTo(Integer value) {
             addCriterion("province =", value, "province");
             return (Criteria) this;
         }
 
-        public Criteria andProvinceNotEqualTo(Long value) {
+        public Criteria andProvinceNotEqualTo(Integer value) {
             addCriterion("province <>", value, "province");
             return (Criteria) this;
         }
 
-        public Criteria andProvinceGreaterThan(Long value) {
+        public Criteria andProvinceGreaterThan(Integer value) {
             addCriterion("province >", value, "province");
             return (Criteria) this;
         }
 
-        public Criteria andProvinceGreaterThanOrEqualTo(Long value) {
+        public Criteria andProvinceGreaterThanOrEqualTo(Integer value) {
             addCriterion("province >=", value, "province");
             return (Criteria) this;
         }
 
-        public Criteria andProvinceLessThan(Long value) {
+        public Criteria andProvinceLessThan(Integer value) {
             addCriterion("province <", value, "province");
             return (Criteria) this;
         }
 
-        public Criteria andProvinceLessThanOrEqualTo(Long value) {
+        public Criteria andProvinceLessThanOrEqualTo(Integer value) {
             addCriterion("province <=", value, "province");
             return (Criteria) this;
         }
 
-        public Criteria andProvinceIn(List<Long> values) {
+        public Criteria andProvinceIn(List<Integer> values) {
             addCriterion("province in", values, "province");
             return (Criteria) this;
         }
 
-        public Criteria andProvinceNotIn(List<Long> values) {
+        public Criteria andProvinceNotIn(List<Integer> values) {
             addCriterion("province not in", values, "province");
             return (Criteria) this;
         }
 
-        public Criteria andProvinceBetween(Long value1, Long value2) {
+        public Criteria andProvinceBetween(Integer value1, Integer value2) {
             addCriterion("province between", value1, value2, "province");
             return (Criteria) this;
         }
 
-        public Criteria andProvinceNotBetween(Long value1, Long value2) {
+        public Criteria andProvinceNotBetween(Integer value1, Integer value2) {
             addCriterion("province not between", value1, value2, "province");
             return (Criteria) this;
         }
@@ -715,52 +715,52 @@ public class UserExample {
             return (Criteria) this;
         }
 
-        public Criteria andCityEqualTo(Long value) {
+        public Criteria andCityEqualTo(Integer value) {
             addCriterion("city =", value, "city");
             return (Criteria) this;
         }
 
-        public Criteria andCityNotEqualTo(Long value) {
+        public Criteria andCityNotEqualTo(Integer value) {
             addCriterion("city <>", value, "city");
             return (Criteria) this;
         }
 
-        public Criteria andCityGreaterThan(Long value) {
+        public Criteria andCityGreaterThan(Integer value) {
             addCriterion("city >", value, "city");
             return (Criteria) this;
         }
 
-        public Criteria andCityGreaterThanOrEqualTo(Long value) {
+        public Criteria andCityGreaterThanOrEqualTo(Integer value) {
             addCriterion("city >=", value, "city");
             return (Criteria) this;
         }
 
-        public Criteria andCityLessThan(Long value) {
+        public Criteria andCityLessThan(Integer value) {
             addCriterion("city <", value, "city");
             return (Criteria) this;
         }
 
-        public Criteria andCityLessThanOrEqualTo(Long value) {
+        public Criteria andCityLessThanOrEqualTo(Integer value) {
             addCriterion("city <=", value, "city");
             return (Criteria) this;
         }
 
-        public Criteria andCityIn(List<Long> values) {
+        public Criteria andCityIn(List<Integer> values) {
             addCriterion("city in", values, "city");
             return (Criteria) this;
         }
 
-        public Criteria andCityNotIn(List<Long> values) {
+        public Criteria andCityNotIn(List<Integer> values) {
             addCriterion("city not in", values, "city");
             return (Criteria) this;
         }
 
-        public Criteria andCityBetween(Long value1, Long value2) {
+        public Criteria andCityBetween(Integer value1, Integer value2) {
             addCriterion("city between", value1, value2, "city");
             return (Criteria) this;
         }
 
-        public Criteria andCityNotBetween(Long value1, Long value2) {
+        public Criteria andCityNotBetween(Integer value1, Integer value2) {
             addCriterion("city not between", value1, value2, "city");
             return (Criteria) this;
         }
@@ -775,52 +775,52 @@ public class UserExample {
             return (Criteria) this;
         }
 
-        public Criteria andTownEqualTo(Long value) {
+        public Criteria andTownEqualTo(Integer value) {
             addCriterion("town =", value, "town");
             return (Criteria) this;
         }
 
-        public Criteria andTownNotEqualTo(Long value) {
+        public Criteria andTownNotEqualTo(Integer value) {
             addCriterion("town <>", value, "town");
             return (Criteria) this;
         }
 
-        public Criteria andTownGreaterThan(Long value) {
+        public Criteria andTownGreaterThan(Integer value) {
             addCriterion("town >", value, "town");
             return (Criteria) this;
         }
 
-        public Criteria andTownGreaterThanOrEqualTo(Long value) {
+        public Criteria andTownGreaterThanOrEqualTo(Integer value) {
             addCriterion("town >=", value, "town");
             return (Criteria) this;
         }
 
-        public Criteria andTownLessThan(Long value) {
+        public Criteria andTownLessThan(Integer value) {
             addCriterion("town <", value, "town");
             return (Criteria) this;
         }
 
-        public Criteria andTownLessThanOrEqualTo(Long value) {
+        public Criteria andTownLessThanOrEqualTo(Integer value) {
             addCriterion("town <=", value, "town");
             return (Criteria) this;
         }
 
-        public Criteria andTownIn(List<Long> values) {
+        public Criteria andTownIn(List<Integer> values) {
             addCriterion("town in", values, "town");
             return (Criteria) this;
         }
 
-        public Criteria andTownNotIn(List<Long> values) {
+        public Criteria andTownNotIn(List<Integer> values) {
             addCriterion("town not in", values, "town");
             return (Criteria) this;
         }
 
-        public Criteria andTownBetween(Long value1, Long value2) {
+        public Criteria andTownBetween(Integer value1, Integer value2) {
             addCriterion("town between", value1, value2, "town");
             return (Criteria) this;
         }
 
-        public Criteria andTownNotBetween(Long value1, Long value2) {
+        public Criteria andTownNotBetween(Integer value1, Integer value2) {
             addCriterion("town not between", value1, value2, "town");
             return (Criteria) this;
         }
@@ -892,6 +892,76 @@ public class UserExample {
 
         public Criteria andChannelCodeNotBetween(String value1, String value2) {
             addCriterion("channel_code not between", value1, value2, "channelCode");
+            return (Criteria) this;
+        }
+
+        public Criteria andChannelTokenIsNull() {
+            addCriterion("channel_token is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andChannelTokenIsNotNull() {
+            addCriterion("channel_token is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andChannelTokenEqualTo(String value) {
+            addCriterion("channel_token =", value, "channelToken");
+            return (Criteria) this;
+        }
+
+        public Criteria andChannelTokenNotEqualTo(String value) {
+            addCriterion("channel_token <>", value, "channelToken");
+            return (Criteria) this;
+        }
+
+        public Criteria andChannelTokenGreaterThan(String value) {
+            addCriterion("channel_token >", value, "channelToken");
+            return (Criteria) this;
+        }
+
+        public Criteria andChannelTokenGreaterThanOrEqualTo(String value) {
+            addCriterion("channel_token >=", value, "channelToken");
+            return (Criteria) this;
+        }
+
+        public Criteria andChannelTokenLessThan(String value) {
+            addCriterion("channel_token <", value, "channelToken");
+            return (Criteria) this;
+        }
+
+        public Criteria andChannelTokenLessThanOrEqualTo(String value) {
+            addCriterion("channel_token <=", value, "channelToken");
+            return (Criteria) this;
+        }
+
+        public Criteria andChannelTokenLike(String value) {
+            addCriterion("channel_token like", value, "channelToken");
+            return (Criteria) this;
+        }
+
+        public Criteria andChannelTokenNotLike(String value) {
+            addCriterion("channel_token not like", value, "channelToken");
+            return (Criteria) this;
+        }
+
+        public Criteria andChannelTokenIn(List<String> values) {
+            addCriterion("channel_token in", values, "channelToken");
+            return (Criteria) this;
+        }
+
+        public Criteria andChannelTokenNotIn(List<String> values) {
+            addCriterion("channel_token not in", values, "channelToken");
+            return (Criteria) this;
+        }
+
+        public Criteria andChannelTokenBetween(String value1, String value2) {
+            addCriterion("channel_token between", value1, value2, "channelToken");
+            return (Criteria) this;
+        }
+
+        public Criteria andChannelTokenNotBetween(String value1, String value2) {
+            addCriterion("channel_token not between", value1, value2, "channelToken");
             return (Criteria) this;
         }
 
